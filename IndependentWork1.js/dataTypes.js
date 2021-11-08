@@ -26,3 +26,15 @@ console.log(typeof Number1);
 // Bigint это встроенный объект позволяющий выводить числа большие 2 * 53 - 1
 const theBiggestInt = 9007199254740991n
 const alsoHuge = BigInt(9007199254740991);
+
+/* 1) Что выведет этот скрипт?
+
+let name = "Ilya"; 
+
+alert( `hello ${1}` ); // ?   --- hello 1
+
+alert( `hello ${"name"}` ); // ?  --- hello name
+
+alert( `hello ${name}` ); // ? --- hello Ilya   */ 
+
+

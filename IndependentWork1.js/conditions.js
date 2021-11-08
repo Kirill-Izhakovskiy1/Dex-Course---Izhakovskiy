@@ -47,7 +47,7 @@ if (a + b < 4) {
 let result;
 (a + b < 4) ? result = 'Мало' : result = "Много"
 
-/* let message;
+/* 5) let message;
 
 if (login == 'Сотрудник') {
   message = 'Привет';
