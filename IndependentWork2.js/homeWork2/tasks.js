@@ -1,7 +1,11 @@
 export const sum = (f, s) => {
     //TODO: Должны складываться только строки и числа
     // Постарайтесь сложить как можно больше пар и обойти NaN случаи
-    return f + s;
+    let a = parseFloat(f);
+    let b = parseFloat(s)
+    a = a ? a: 0;
+    b = b ? b :0;
+    return a + b
   };
   
   export const showPrice = (price, discount) => {
