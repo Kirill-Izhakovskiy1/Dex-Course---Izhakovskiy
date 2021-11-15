@@ -79,7 +79,8 @@ export const processCartData = (cartData) => {
     let copy =[];
    let filtereData = cartData.filter(i => i.date === date)
    let newclone = {}
-   filtereData.map(i => Object.assign({},i))
+   let copeMassiv = filtereData.map(i => Object.assign({},i))
+   copeMassiv.map(i=> i.id === Math.floor(Math.random() * 2000))
    return cartData
   };
   
