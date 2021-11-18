@@ -9,10 +9,11 @@ return fn;
 
 //TODO: Напишите функцию логгер, должна принимать название и функцию, а возвращать функцию
 // Выводит в консоль, в момент вызова функции из параметров, её параметры результат и название
-export const logger = (a,b) => {
- console.log(logger.name)
- console.log(a,b)
- return a + b 
+export const logger = (name, fn) => {
+    return function (...rest) {
+        console.log(` ${name}:`, ...rest);
+        return fn.apply(this);
+    };
 };
 
 //TODO: Напишите функцию каррирования, должна принимать функцию, а возвращать функцию
