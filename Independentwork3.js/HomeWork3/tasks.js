@@ -75,13 +75,12 @@ export const processCartData = (cartData) => {
      newclone[b] = i[b]
    }})
    return cartData */
-
-    let copy =[];
+//    let newclone = {}
+    // let copy =[];
    let filtereData = cartData.filter(i => i.date === date)
-   let newclone = {}
    let copeMassiv = filtereData.map(i => Object.assign({},i))
-   copeMassiv.map(i=> i.id === Math.floor(Math.random() * 2000))
-   return cartData
+   let copeMassivwithuniqueID= copeMassiv.map(i=> i.id === Math.floor(Math.random() * 2000))
+   return cartData.unshift(...copeMassivwithuniqueID);
   };
   
   export const addItem = (cartData, item) => {
