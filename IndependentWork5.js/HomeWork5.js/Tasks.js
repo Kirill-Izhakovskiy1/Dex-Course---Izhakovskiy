@@ -65,14 +65,14 @@ const getDataFromAPI = async (url) => {
     let response = await fetch(url); 
      
     if (response.status < 200 || response.status >299) { 
-        console.log("Ошибка1 ", response.status) 
+        console.log("Ошибка", response.status) 
     } 
     else { 
       console.log(await response.json()) 
     } 
      
   } catch(err) { 
-    console.log("Ошибка1 ") 
+    console.log("Ошибка") 
         
   } 
 }; 
